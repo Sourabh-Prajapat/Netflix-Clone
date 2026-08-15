@@ -48,22 +48,39 @@ nav {
     align-items: center;
     padding: 0px 148px;
     position: relative;
+    /* border: 2px solid white; */
     /* margin: 0px 200px 0px 200px; */
     /* height: 20px; */
-    /* top: 20px; */
+    /* top: 10px; */
     /* background-color: blue; */
 }
 
+.lang{
+    display: flex;
+    gap: 10px;
+}
 
-.btn-lang {
-    padding: 7px 18px;
-    margin: 9px;
-    border: 1px solid white;
-    border-radius: 5px;
+.language-select {
     background-color: rgba(2, 2, 2, 0.5);
+    /* background-color: aqua; */
+    border: 0.5px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.language-select select option{
+    color: black;
+    background-color: white;
+}
+
+select{
     color: white;
-    font-size: medium;
-    font-weight: 200px;
+    /* background-color: aqua; */
+    background-color: rgba(2, 2, 2, 0.5);
+    border: none;
+    font-size: 16px;
 }
 
 .btn-sign {
@@ -263,11 +280,34 @@ input {
 }
 
 .container3{
-    background-color: purple;
+    /* background-color: purple; */
     max-width: 70lh;
-    height: 200px;
+    /* height: 200px; */
     margin-top: 100px;
     margin-right: 20px;
-    margin-left: 150px;
-    margin-bottom: 200px;
+    margin-left: 148px;
+    margin-bottom: 100px;
+}
+
+.ques{
+    margin-top: 15px;
+}
+
+.questions{
+    background-color: #2d2d2d;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80vw;
+    height: 85px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.questions:hover{
+    background-color: #424040;
 }
