@@ -1,28 +1,39 @@
 # 🎬 Netflix Clone
 
-A responsive **Netflix-inspired movie streaming website** built using **HTML and CSS**. This project focuses on recreating the visual design and user interface of a modern streaming platform.
+A responsive **Netflix-inspired movie streaming website** built using **HTML, CSS, and JavaScript**. The project recreates the look and feel of a modern streaming platform while adding interactive functionality such as content sliders and an FAQ accordion.
+
+## 🚀 Live Demo
+
+> [View Live Demo](https://sourabh-prajapat.github.io/Netflix-Clone/)
 
 ## 📌 About the Project
 
-This project is a front-end implementation inspired by the Netflix streaming platform. It was created to practice and demonstrate skills in HTML and CSS, including responsive layouts, navigation bars, movie cards, banners, and modern web styling.
+This project is a front-end implementation inspired by the Netflix streaming platform. It was developed to practice and demonstrate **HTML, CSS, and JavaScript** skills while creating a responsive and interactive user interface.
 
-The project focuses on creating a clean and visually appealing streaming-platform interface without using JavaScript or any backend technology.
+The website includes a Netflix-inspired layout with navigation, movie/content sections, interactive sliders, and a Frequently Asked Questions section with expandable answers.
 
 ## ✨ Features
 
 * 🎥 Netflix-inspired user interface
-* 📱 Responsive layout for different screen sizes
+* 📱 Responsive design for different screen sizes
 * 🧭 Navigation bar
 * 🖼️ Hero/banner section
 * 🎬 Movie and content cards
 * 📂 Multiple content sections
 * 🎨 Modern CSS styling
-* 📱 Responsive design
+* 🔄 Interactive content slider
+* ⏮️ Previous and Next buttons for slider navigation
+* ❓ Interactive Frequently Asked Questions (FAQ) section
+* 📖 Click on an FAQ to show its answer
+* 🔽 Click again to hide the answer
+* 🔄 Opening another FAQ automatically hides the previously opened answer
+* ⚡ JavaScript-powered interactions
 
 ## 🛠️ Technologies Used
 
-* **HTML5** – Structure and content
+* **HTML5** – Structure and content of the website
 * **CSS3** – Styling, layout, responsiveness, and visual design
+* **JavaScript** – Interactive sliders, navigation buttons, and FAQ functionality
 
 ## 📁 Project Structure
 
@@ -31,6 +42,7 @@ Netflix-Clone/
 │
 ├── index.html
 ├── style.css
+├── script.js
 ├── assets/
 │   └── images/
 │       └── ...
@@ -58,6 +70,26 @@ Open `index.html` in your browser.
 
 You can also use **VS Code Live Server** to run the project locally.
 
+## 🎯 JavaScript Functionality
+
+### 🔄 Content Slider
+
+The website includes an interactive content slider that allows users to navigate through additional movie/content cards using:
+
+* **Previous (<) button**
+* **Next (>) button**
+
+Users can click the buttons to scroll through the available content without manually scrolling the slider.
+
+### ❓ FAQ Accordion
+
+The Frequently Asked Questions section uses JavaScript to provide an interactive accordion:
+
+* Click an FAQ question to display its answer.
+* Click the same question again to hide the answer.
+* When another question is opened, the previously opened answer automatically closes.
+* Only one FAQ answer remains visible at a time.
+
 ## 🎯 Learning Objectives
 
 Through this project, I practiced:
@@ -66,18 +98,23 @@ Through this project, I practiced:
 * CSS layouts and positioning
 * Flexbox and Grid
 * Responsive web design
-* Creating reusable UI components
-* Building modern web interfaces
+* JavaScript DOM manipulation
+* JavaScript event handling
+* Creating interactive UI components
+* Implementing a content slider
+* Building an FAQ accordion
+* Creating modern and responsive web interfaces
 
 ## 🔮 Future Improvements
 
-* Add JavaScript-based interactions
 * Add movie search functionality
 * Add movie details pages
 * Integrate a movie API
 * Add user authentication
+* Add login and signup functionality
 * Add backend functionality
 * Add video playback functionality
+* Add personalized movie recommendations
 
 ## ⚠️ Disclaimer
 

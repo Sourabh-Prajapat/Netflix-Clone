@@ -182,7 +182,7 @@ input {
 
 .container{
     /* background-color: purple; */
-    max-width: 70lh;
+    max-width: 68lh;
     height: 200px;
     margin-top: 50px;
     margin-right: 20px;
@@ -196,6 +196,30 @@ input {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-bottom: 8px;
+}
+
+.fullslider{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.slideBtn{
+    background-color: #1a1a1a;
+    border: 4px;
+    border-radius: 8px;
+    height: 120px;
+    opacity: 1;
+    transition: background-color 0.3s ease , opacity 0.5s ease;
+}
+
+.slideBtn:hover{
+    background-color: rgb(58, 57, 57);
+}
+
+#prevBtn.hidden, #nextBtn.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .slider{
@@ -261,7 +285,7 @@ input {
     /* border: 2px solid aqua; */
     height: 280px;
     width: 290px;
-    background: linear-gradient(180deg, #192144 30%, #210e18 100%);
+    background: linear-gradient(150deg, #192144 0%, #210e18 100%);
     border-radius: 20px;
     padding-top: 18px;
     padding-left: 12px;
@@ -295,7 +319,8 @@ input {
 
 .questions{
     background-color: #2d2d2d;
-    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-bottom: 1px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -310,4 +335,24 @@ input {
 
 .questions:hover{
     background-color: #424040;
+}
+
+.answer{
+    background-color: #2d2d2d;
+    /* padding-left: 25px; */
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 25px;
+    padding-right: 50px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 80vw;
+
+    transition: max-height 0.4s ease, padding 0.2s ease;
+}
+
+.answer.show{
+    max-height: fit-content;
+    padding: 25px;
+    padding-right: 50px;
 }
